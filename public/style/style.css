@@ -1,0 +1,250 @@
+body {
+    font-family: sans-serif;
+}
+
+#abstract_article-field {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 990px;
+}
+
+#abstract_article-content {
+    padding: 15px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    border: 1px solid #dedede;
+    text-align: justify;
+    line-height: 27px;
+    max-height: 800px;
+    overflow: auto;
+}
+
+#abstract_article-buttons {
+    padding: 0 15px 15px 15px;
+    display: grid;
+    margin-top: 11px;
+}
+
+.button {
+    background-color: white;
+    padding: 10px;
+    display: block;
+    max-width: max-content;
+    justify-self: right;
+    margin-right: 16px;
+    border-radius: 4px;
+    border: 2px solid #bebebe;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: #489bf5;
+    color: white;
+    border-color: #489bf5;
+}
+
+.comment-field {
+    border: 2px solid #d5d5d5;
+    padding: 10px;
+    border-radius: 4px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    position: relative;
+}
+
+.abstract_article-comments {
+    margin-top: 45px;
+}
+
+.comment-message {
+    padding: 10px;
+    max-height: 200px;
+    overflow: auto;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.comment-message[contenteditable="true"] {
+    border: 2px solid #a9bdeb;
+    border-radius: 4px;
+    outline: none;
+}
+
+.comment-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+}
+
+.comment-menu .record-date {
+    justify-self: start;
+    align-self: end;
+}
+
+.comment-menu .buttons {
+    justify-self: end;
+    align-self: center;
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+
+.comment-answer {
+    width: max-content;
+    justify-self: right;
+}
+
+.notify-field {
+    position: fixed;
+    right: 5px;
+    padding: 10px;
+    text-align: center;
+    top: 5px;
+    color: black;
+    border-radius: 6px;
+    transition: 0.2s;
+    transform: translateX(110%);
+    background-color: white;
+    min-width: 200px;
+    max-width: 450px;
+}
+
+.notify-field.show {
+    transform: translateX(0);
+}
+
+.notify-field.error {
+    border: 2px solid #c80e0e;
+}
+
+.notify-field.success {
+    border: 2px solid #2fc80e;
+}
+
+#add_comment-field {
+    margin: 10px auto;
+    display: grid;
+    border-radius: 4px;
+    max-width: 800px;
+}
+
+#add_article_comment-block {
+    width: calc(100% - 52px);
+    padding: 25px;
+    resize: none;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 19px;
+    height: 140px;
+}
+
+#add_article_comment_buttons_menu-field {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    width: max-content;
+    margin: 10px auto;
+    grid-column-gap: 12px;
+}
+
+#add_article_comment_buttons_menu-field button {
+    margin: 10px auto;
+}
+
+.comment-field:before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: -16px;
+    position: absolute;
+}
+
+.comment-field[data-nesting="0"]:before  {
+    background-color: white;
+}
+
+.comment-field[data-nesting="1"] {
+    width: 79%;
+}
+
+
+.comment-field[data-nesting="1"]:before  {
+    background-color: #0081ff;
+}
+
+.comment-field[data-nesting="2"] {
+    width: 77%;
+}
+
+
+.comment-field[data-nesting="2"]:before  {
+    background-color: #00a9ff;
+}
+
+.comment-field[data-nesting="3"] {
+    width: 75%;
+}
+
+
+.comment-field[data-nesting="3"]:before  {
+    background-color: #00ffd2;
+}
+
+.comment-field[data-nesting="4"] {
+    width: 73%;
+}
+
+
+.comment-field[data-nesting="4"]:before  {
+    background-color: #00ff80;
+}
+
+.comment-field[data-nesting="5"] {
+    width: 72%;
+}
+
+
+.comment-field[data-nesting="5"]:before  {
+    background-color: #00ff4a;
+}
+
+.comment-field[data-nesting="6"] {
+    width: 70%;
+}
+
+
+.comment-field[data-nesting="6"]:before  {
+    background-color: #0aff00;
+}
+
+.comment-field[data-nesting="7"] {
+    width: 68%;
+}
+
+
+.comment-field[data-nesting="7"]:before  {
+    background-color: #fff500;
+}
+
+.comment-field[data-nesting="8"] {
+    width: 66%;
+}
+
+
+.comment-field[data-nesting="8"]:before  {
+    background-color: #c58000;
+}
+
+.comment-field[data-nesting="9"] {
+    width: 64%;
+}
+
+
+.comment-field[data-nesting="9"]:before  {
+    background-color: #ff0000;
+}
